@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EZZI Stationary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="brand-tag">EZZI Stationary</p>
+      <h1>Your One-Stop Shop for Premium Stationery</h1>
+      <p class="subtitle">Clean, practical, and professional products for students, offices, and creatives.</p>
+      <a href="#products" class="btn-primary">Browse Products</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="customer-details">
+      <div class="container card">
+        <h2>Customer Details</h2>
+        <p>Enter your details once, then click <strong>Order on WhatsApp</strong> for any product.</p>
+        <form id="customerForm" class="details-grid">
+          <label>
+            Full Name
+            <input id="customerName" type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Phone Number
+            <input id="customerPhone" type="tel" placeholder="e.g. +92 300 1234567" required />
+          </label>
+          <label>
+            Delivery Note (optional)
+            <input id="customerNote" type="text" placeholder="Area, timing, or any note" />
+          </label>
+        </form>
+        <p class="small-note">Business WhatsApp number is configured in <code>script.js</code>.</p>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Featured Products</h2>
+          <p>Select any product and place order instantly on WhatsApp.</p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> EZZI Stationary. All rights reserved.</p>
+      <p>Fast response via WhatsApp ordering.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
